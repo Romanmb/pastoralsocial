@@ -51,7 +51,7 @@ background:#f0bf00;
 color:#333;
 }
 /*---------- FORMS ----------*/
-
+/* Prueba Roman
 input[type=text], input[type=submit], textarea {
 	width: 100%;
 	padding: 0.7em;
@@ -63,7 +63,7 @@ input[type=text], input[type=submit], textarea {
 }
 input, button, select, textarea {
 	font-family: 'Quattrocento', serif;
-}
+} */
 /* ---------------------------------------------------------------------------------------------------------- 
 02 Typography -----------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
@@ -254,9 +254,6 @@ ul#menu-main > li > a:hover {
 #headerwrap {
 	width: 100%;
 	background: url(../img/pastoralsocial.jpg) #0b333f no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	min-height: 700px;
 	margin-top: -60px;
@@ -272,8 +269,6 @@ ul#menu-main > li > a:hover {
 	margin: 0.1em 0;
 }
 #headerwrap h2 {
-	
-	/*border: 4px solid #000000;*/
 	border-radius:15px;
 	background-color: rgb(250,250,250); opacity: 0.5;
 	color: #000000;
@@ -281,7 +276,7 @@ ul#menu-main > li > a:hover {
 	font-size: 2em;
 	font-weight: normal;
 	margin: 20px auto;
-	padding: 8px;
+	padding: 10px;
 	text-align: center;
 	text-shadow: #fff 1.5px 1.5px 3px;
 	width: 500px;
@@ -328,7 +323,7 @@ ul#menu-main > li > a:hover {
 #headerwrap input[type=submit]:hover, #headerwrap input[type=submit]:active {
 	background: #43413e !important;
 }
-/*========== Social Icons ==========*/
+/*========== Social Icons (feature)==========*/
 ul.icon {
 	font-size:54px;
 	margin:1em 0 0.5em 0;
@@ -344,7 +339,8 @@ ul.icon li:hover {
 	opacity:0.7;
 }
 section.single-page {
-	padding: 4.75em 0; /* 76px */
+	padding: 0; /* 76px */
+	margin: 0;
 }
 section.single-page h1 {
 	text-align: center;
@@ -354,7 +350,7 @@ section.single-page h1 {
 }
 #feature {
 	background: url("../img/yellow.png") repeat-x 0 0;
-	height: 406px;
+	height: 280px;
 	z-index: 500;
 	box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
@@ -362,7 +358,7 @@ section.single-page h1 {
 }
 #feature article {
 	text-align: center;
-	margin-top: 120px;
+	margin-top: 20px; /* 10px Roman*/
 	max-width: 1170px;
 }
 #feature-headline {
@@ -380,7 +376,7 @@ section.single-page h1 {
 }
 #feature article p {
 	font-family: 'Patua One', cursive;
-	font-size: 40px;
+	font-size: 42px;
 	margin-bottom: 0;
 	line-height: 1.35;
 	color: #fff;
@@ -601,92 +597,67 @@ section#team .align, section#contacto .align {
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: .46155em;
 }
-/* contacto Form */
 
-#theme-form {
-	position: relative;
-	z-index: 999;
+/* Contact -  Copiado de fitos ahuatepec
+---------------------------------*/
+
+.form{
+	margin:0 66px 0 30px;
 }
-#theme-form input[type=text], .cform-form textarea {
-	background: rgba(227, 231, 228, 1);
-	font-family: 'Open Sans', sans serif;
-	border: 0;
-	text-align: left;
-	vertical-align: middle;
-}
-#theme-form input[type=text]:focus, .cform-form textarea:focus {
-	background: rgba(101, 106, 100, 1);
-	color: #eff1ef;
-	box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	transition: background 0.25 ease-in;
-	-moz-transition: background 0.25 ease-in;
-	-webkit-transition: background 0.25 ease-in;
-}
-#theme-form input[type=text] {
-	height: 3.25em;
-}
-#theme-form input[type=submit] {
-	font-family: 'Patua One', cursive;
-	color: #fff;
-	width: 185px;
-	height: 60px;
-	text-shadow: none;
-	font-size: 1.3125em; /* 21px */
-	padding:0.5em;
-	letter-spacing: 0.05em;
-	margin: 0 0 20px 0;
-	display: block;
-	border: 0;
-	text-transform: none;
-	background: #f0bf00 !important;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-}
-#theme-form input[type=submit]:hover, #theme-form input[type=submit]:active {
-	background: #43413e !important;
-}
-#theme-form textarea {
-	padding-top: 1em;
-}
-div.cform-response-output {
-	max-width: 60%;
-	text-align: center;
-	margin-left: 40% !important;
-	margin-top: 0.5em !important;
-	padding: 0.5em !important;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-}
-.cform-not-valid-tip {
-	color: #888;
-	border: 1px dotted #ad3729 !important;
-	width: 100% !important;
-	left: 0 !important;
-	padding: 0.5em !important;
+.input-text{
+	padding:15px 16px;
+	border:1px solid #ccc;
+	width:100%;
+	height:50px;
+	display:block;
+	border-radius:4px;
+	font-size:15px;
+	color:#aaa;
 	font-family: 'Open Sans', sans-serif;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
+	margin:0 0 15px 0;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
 }
+.input-text:focus {
+	border: 1px solid #7cc576;
+	outline:0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);	
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
+}
+
+.input-text.text-area{
+	height:165px;
+	resize:none;
+	overflow:auto;
+}
+.input-btn{
+	width:175px;
+	height:50px;
+	background:#312A1E;
+	border-radius:4px;
+	color:#ffffff;
+	font-size:14px;
+	text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+	border:0px;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+
+.input-btn:hover{
+	background: #111;
+	color: #fff;
+}
+
+
 /* Featurettes */
 
 
 
-hr.featurette-divider {
-	margin: 3em 0;
-	border-width: 0;
-	height: 9px;
-	background: url("../img/dot-row-3-lt.png") repeat-x;
 }
 /* ---------------------------------------------------------------------------------------------------------- 
 06 Footer ------------------------------------------------------------
@@ -884,6 +855,7 @@ footer p {
  #headerwrap {
  padding-top:0;
 }
+
 }
  @media (max-width: 767px) {
  .container {
@@ -929,12 +901,16 @@ footer p {
 	@media (max-width : 480px) {
  #headerwrap {
  padding-top:0;
+ background-size:160%;
+ margin-top: -50px;
+ min-height: 250px;
 }
  #headerwrap h1 {
  font-size:2em;
 }
  #headerwrap h2 {
  font-size:1em;
+ width: 225px;
 }
  #headerwrap input[type="text"] {
  width: 100%;
@@ -942,6 +918,10 @@ footer p {
  #headerwrap input[type="submit"] {
  margin-top:1em;
  width: 135px;
+}
+ .navbar-inner {
+ margin:	0;
+ background-color: rgb(0,0,0); opacity: 0.8;
 }
  .container {
 1px solid yellow;
@@ -952,13 +932,23 @@ footer p {
  width: 150px;
  display: block;
  text-align:center
+} 
+#feature {
+height: 410px;
+}
+#feature article {
+	
+margin-top: 10px; /* 10px Roman*/
 }
  #feature article p {
- font-family: 'Open Sans', sans-serif;
- font-size: 26px; /* font-size: 26px; */
- margin-bottom: 0;
- line-height: 30px;
- color: #fff;
+
+font-family: 'Patua One', cursive;
+
+margin-bottom: 0;
+line-height: 1;
+color: #000000;
+font-size: 20px;
+
 }
 }
     
@@ -972,6 +962,7 @@ footer p {
 }
  #navbar-inner {
  margin:	0;
+ background-color: rgb(0,0,0); opacity: 0.8;
 }
  #banner { /*display: none;*/
 }
