@@ -50,20 +50,7 @@ color:#333;
 background:#f0bf00;
 color:#333;
 }
-/*---------- FORMS ----------*/
-/* Prueba Roman
-input[type=text], input[type=submit], textarea {
-	width: 100%;
-	padding: 0.7em;
-	font-size: 1em;
-	margin-bottom: 1.5em;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
-input, button, select, textarea {
-	font-family: 'Quattrocento', serif;
-} */
+
 /* ---------------------------------------------------------------------------------------------------------- 
 02 Typography -----------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
@@ -252,14 +239,17 @@ ul#menu-main > li > a:hover {
 05 Single-Page Sections ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 #headerwrap {
-	width: 100%;
 	background: url(../img/pastoralsocial.jpg) #0b333f no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	min-height: 700px;
 	margin-top: -60px;
 	padding-top:260px;
 	text-align:center;
 	text-shadow: #000000 6px 6px 8px;
+	width: 100%;
 }
 #headerwrap h1 {
 	color: #FFCC00;
@@ -269,6 +259,8 @@ ul#menu-main > li > a:hover {
 	margin: 0.1em 0;
 }
 #headerwrap h2 {
+	
+	/*border: 4px solid #000000;*/
 	border-radius:15px;
 	background-color: rgb(250,250,250); opacity: 0.5;
 	color: #000000;
@@ -276,7 +268,7 @@ ul#menu-main > li > a:hover {
 	font-size: 2em;
 	font-weight: normal;
 	margin: 20px auto;
-	padding: 10px;
+	padding: 8px;
 	text-align: center;
 	text-shadow: #fff 1.5px 1.5px 3px;
 	width: 500px;
@@ -323,7 +315,7 @@ ul#menu-main > li > a:hover {
 #headerwrap input[type=submit]:hover, #headerwrap input[type=submit]:active {
 	background: #43413e !important;
 }
-/*========== Social Icons (feature)==========*/
+/*========== Social Icons ==========*/
 ul.icon {
 	font-size:54px;
 	margin:1em 0 0.5em 0;
@@ -339,8 +331,7 @@ ul.icon li:hover {
 	opacity:0.7;
 }
 section.single-page {
-	padding: 0; /* 76px */
-	margin: 0;
+	padding: 4.75em 0; /* 76px */
 }
 section.single-page h1 {
 	text-align: center;
@@ -350,7 +341,7 @@ section.single-page h1 {
 }
 #feature {
 	background: url("../img/yellow.png") repeat-x 0 0;
-	height: 280px;
+	height: 360px;
 	z-index: 500;
 	box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
@@ -358,7 +349,7 @@ section.single-page h1 {
 }
 #feature article {
 	text-align: center;
-	margin-top: 20px; /* 10px Roman*/
+	margin-top: 30px;
 	max-width: 1170px;
 }
 #feature-headline {
@@ -376,7 +367,7 @@ section.single-page h1 {
 }
 #feature article p {
 	font-family: 'Patua One', cursive;
-	font-size: 42px;
+	font-size: 40px;
 	margin-bottom: 0;
 	line-height: 1.35;
 	color: #fff;
@@ -545,28 +536,33 @@ article .inside {
 	color: #312A1E;
 	clear: right;
 }
-/* Team and contacto */
+/* Team and contacto*/
 
-section#team, section#contacto {
+
+section#team {
 	color: #e4e5e2;
 	background:#312A1E;
 }
-section#team .align, section#contacto .align {
+section#icono-contacto {
+	color: #e4e5e2;
+	background: #000000;	
+}
+section#team .align, section#icono-contacto .align {
 	font-size: 6em;
 	text-align: center;
 }
-#team h1, #contacto h1 {
+#team h1, #icono-contacto h1 {
 	font-size: 3em;
 	margin-bottom: 1em;
 	margin-top: 0.5em;
 }
-#contacto, #team {
+#icono-contacto, #team {
 	padding-top: 4.75em;
 }
 #team {
 	padding-bottom: 0;
 }
-#contacto {
+#icono-contacto {
 	padding-bottom: 0;
 }
 /* team */
@@ -597,9 +593,34 @@ section#team .align, section#contacto .align {
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: .46155em;
 }
+/* contacto Form */
 
-/* Contact -  Copiado de fitos ahuatepec
----------------------------------*/
+.contacto-info-box{
+	font-size:15px;
+	margin:10 0 14px 68px;
+	padding-left:0;
+}
+.contacto-info-box h3{
+	font-size: 15px;
+	font-weight:400;
+	float:left;
+	width:102px;
+	margin-right:12px;
+	line-height:28px;
+}
+.contacto-info-box h3 i{
+	font-style:normal;
+	font-size:18px;
+	color:#222222;
+	font-family: 'FontAwesome';
+	font-weight:normal;
+	margin-right:7px;
+}
+.contacto-info-box span{
+	line-height:28px;
+	display:block;
+	overflow:hidden;
+}
 
 .form{
 	margin:0 66px 0 30px;
@@ -608,7 +629,7 @@ section#team .align, section#contacto .align {
 	padding:15px 16px;
 	border:1px solid #ccc;
 	width:100%;
-	height:50px;
+	height:80px;
 	display:block;
 	border-radius:4px;
 	font-size:15px;
@@ -635,12 +656,12 @@ section#team .align, section#contacto .align {
 .input-btn{
 	width:175px;
 	height:50px;
-	background:#312A1E;
+	background:#000000;
 	border-radius:4px;
 	color:#ffffff;
 	font-size:14px;
 	text-transform:uppercase;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Patua One', sans-serif;
 	font-weight:400;
 	border:0px;
 	transition:all 0.3s ease-in-out;
@@ -649,15 +670,22 @@ section#team .align, section#contacto .align {
 }
 
 .input-btn:hover{
-	background: #111;
+	background: #FFCC00;
 	color: #fff;
 }
+
+
 
 
 /* Featurettes */
 
 
 
+hr.featurette-divider {
+	margin: 3em 0;
+	border-width: 0;
+	height: 9px;
+	background: url("../img/dot-row-3-lt.png") repeat-x;
 }
 /* ---------------------------------------------------------------------------------------------------------- 
 06 Footer ------------------------------------------------------------
@@ -803,300 +831,255 @@ footer p {
 #error span p {
   color:#c0392b;
 }
+
+
 /* RESPONSIVE 
 -------------------------------------------------- */
-
-    @media (max-width: 1186px) {
- .banner-caption {
-	    	/*	width: 18%; */
-	    	position: absolute;
- left: 20%;
- top: 6%;
- color: #007ac3;
+@media (min-width: 980px) and (max-width: 1024px) {
+ 
+#feature {
+ height: 310px;
 }
- #intro-caption {
- font-family: 'Open Sans', sans-serif;
+#feature article {
  text-align: center;
- font-size: 60px;
- line-height: 70px;
+ margin-top: 15px;
+ max-width: 979px;
 }
- .banner-caption p {
- font-size: 1em;
-}
-}
- @media (max-width: 979px) {
- .navbar-fixed-top {
- margin-bottom: 0;
-}
- .navbar .container {
- width: 100%;
-}
- .navbar .brand {
- margin-top: 0;
-}
- .navbar .btn-navbar {
- margin-top: 0;
-}
- .navbar-fixed-top .navbar-inner {
- padding: 0px;
-}
- .featurette {
- height: auto;
- padding: 0;
-}
- .featurette-image.pull-left,  .featurette-image.pull-right {
- display: block;
- float: none;
- max-width: 40%;
- margin: 0 auto 20px;
+#feature article p {
+ font-size: 38px;
 }
 }
- @media (min-width: 768px) and (max-width: 979px) {
- #headerwrap {
- padding-top:0;
+ 
+@media (min-width: 768px) and (max-width: 979px) {
+ 
+#feature {
+ height: 310px;
+}
+#feature article {
+ text-align: center;
+ margin-top: 15px;
+ max-width: 979px;
+}
+#feature article p {
+ font-size: 32px;
+}
+#headerwrap {	
+ background: url(../img/pastoralsocial.jpg) #0b333f no-repeat center;
+ padding-top:0px;
+ background-size:100%; /* 320px, 320px landscape */
+ margin-top: 0px;
+ min-height: 470px;
+ height: 0px;
+}
+ #headerwrap h1 {
+ font-size:4em;
+ margin-top: 2.8em;
+}
+ #headerwrap h2 {
+ font-size:1.8em;
+ margin: 15px auto;
+ padding: 3px;
+ width: 450px;
+}
+ ul.icon {
+ font-size:55px;
+ margin:0.5em 0 0.5em 0;
+}
+.navbar-inner {
+ min-height: 0em;
 }
 
+
+section#dimensiones {
+	padding-bottom: 0;
+	max-width: 979px;
 }
- @media (max-width: 767px) {
- .container {
- padding-right: 5px;
- padding-left: 5px;
+section#dimensiones .entry-content {
+	margin: 1em 0 2.5em;
 }
- .navbar-fixed-top,  .navbar-fixed-bottom,  .navbar-static-top {
- margin-right: 0px;
- margin-left: 0px;
- margin-bottom:0px;
- padding-bottom:0px;
-}
- .navbar-inner {
- margin: 0;
-}
- .carousel {
- margin-left: -20px;
- margin-right: -20px;
-}
- .carousel .container {
-}
- .carousel-caption {
- width: 65%;
- padding: 0 70px;
- margin-top: 100px;
-}
- .carousel-caption h1 {
- font-size: 30px;
-}
- .carousel-caption .lead,  .carousel-caption .btn {
- font-size: 18px;
-}
- .featurette-heading {
- font-size: 30px;
-}
- .featurette .lead {
- font-size: 18px;
- line-height: 1.5;
+section#dimensiones .align {
+	text-align:center;
+	margin-top:10px;
+	font-size:6em;
 }
 }
+ 
+ 
+ 
+  /* Smartphones (portrait and landscape) ----------- */
+@media (min-width: 480px) and (max-width: 767px) {
+#feature {
+ height: 310px;
+}
+#feature article {
+ text-align: center;
+ margin-top: 15px;
+ max-width: 767px;
+}
+#feature article p {
+ font-size: 29px;
+}
+#headerwrap {	
+ background: url(../img/pastoralsocial.jpg) #0b333f no-repeat center;
+ padding-top:0px;
+ background-size:100%; /* 320px, 320px landscape */
+ margin-top: 0px;
+ min-height: 320px;
+ height: 0px;
+}
+ #headerwrap h1 {
+ font-size:3.3em;
+ margin-top: 2.2em;
+}
+ #headerwrap h2 {
+ font-size:1.4em;
+ margin: 7px auto;
+ padding: 3px;
+ width: 310px;
+}
+ ul.icon {
+ font-size:45px;
+ margin:0 0 0.5em 0;
+}
+.navbar-inner {
+ min-height: 0em;
+}
+}
+
     
-    /* Smaller screens ----------- */
-	@media (max-width : 480px) {
- #headerwrap {
- padding-top:0;
- background-size:160%;
- margin-top: -50px;
- min-height: 250px;
+    
+    /* Smartphones (portrait and landscape) ----------- */
+@media (min-width: 321px) and (max-width: 479px) { 
+
+#feature {
+ height: 300px;
+}
+#feature article {
+ text-align: center;
+ margin-top: 20px;
+ max-width: 479px;
+}
+#feature article p {
+ font-size: 23.2px;
+}
+#headerwrap {	
+ background: url(../img/pastoralsocial.jpg) #0b333f no-repeat center;
+ padding-top:0px;
+ background-size:135%; /* 320px, 320px landscape */
+ margin-top: 0px;
+ min-height: 245px;
+ height: 0px;
 }
  #headerwrap h1 {
  font-size:2em;
+ margin-top: 3em;
 }
  #headerwrap h2 {
  font-size:1em;
- width: 225px;
+ margin: 7px auto;
+ padding: 3px;
+ width: 210px;
 }
- #headerwrap input[type="text"] {
- width: 100%;
+ ul.icon {
+ font-size:45px;
+ margin:0 0 0.5em 0;
 }
- #headerwrap input[type="submit"] {
- margin-top:1em;
- width: 135px;
+.navbar-inner {
+ min-height: 0em;
 }
- .navbar-inner {
- margin:	0;
- background-color: rgb(0,0,0); opacity: 0.8;
 }
- .container {
-1px solid yellow;
-}
- #team .team-thumb {
- margin-right: auto;
- margin-left: auto;
- width: 150px;
- display: block;
- text-align:center
-} 
+
+
+
+	/* iPhone 5 portrait · width: 320px ----------- */
+@media (min-width: 241px)  and (max-width : 320px) {
+
 #feature {
-height: 410px;
+ height: 300px;
 }
 #feature article {
-	
-margin-top: 10px; /* 10px Roman*/
-}
- #feature article p {
-
-font-family: 'Patua One', cursive;
-
-margin-bottom: 0;
-line-height: 1;
-color: #000000;
-font-size: 20px;
-
-}
-}
-    
-    /* Smartphones (portrait and landscape) ----------- */
-	@media only screen  and (min-device-width : 320px)  and (max-device-width : 480px) {
- #feature-headline {
- background: transparent;
- text-indent: 0;
- overflow: visible;
- margin-top: 1.5em;
-}
- #navbar-inner {
- margin:	0;
- background-color: rgb(0,0,0); opacity: 0.8;
-}
- #banner { /*display: none;*/
-}
- section.single-page {
- padding: 1em 0;
-}
-		
-		/* Feature */
-		#feature-badge {
-/*	display: none; */
-		}
-		
-		/* dimensiones & News */
-		
-		#news h1 {
- background: transparent;
-}
- #news h1 span {
- background: transparent;
- padding: 0;
-}
- #dimensiones .container {
- top: 0 !important;
-}
- #feature article p {
- font-family: 'Open Sans', sans-serif;
- font-size: 26px; /* font-size: 26px; */
- margin-bottom: 0;
- line-height: 30px;
- color: #fff;
-}
- .img-news {
- width: 100%;
-}
- .img-news {
- margin-right: auto;
- margin-left: auto;
- display: block;
-}
- section#dimensiones hgroup h2 {
- margin-top: 1.5em;
-}
-	
-		/* Services */
-		
-		#services h1 {
- background: transparent;
-}
- #services h1 span {
- background: transparent;
- padding: 0;
-}
- section#services h2 {
- margin-bottom: 0.25em;
-}
- section#services h2, section#services ul {
  text-align: center;
+ margin-top: 20px;
+ max-width: 320px;
 }
-		
+#feature article p {
+ font-size: 20px;
+}
+#headerwrap {	
+ background: url(../img/pastoralsocial.jpg) #0b333f no-repeat center;
+ padding-top:0px;
+ background-size:150%; /* 320px, 320px landscape */
+ margin-top: 0px;
+ min-height: 200px;
+ height: 0px;
+}
+ #headerwrap h1 {
+ font-size:1.8em;
+ margin-top: 2em;
+}
+ #headerwrap h2 {
+ font-size:0.8em;
+ margin: 7px auto;
+ padding: 3px;
+ width: 210px;
+}
+ ul.icon {
+ font-size:45px;
+ margin:0 0 0.5em 0;
+}
+.navbar-inner {
+ min-height: 0em;
+}
+}
 
-	    /* Testimonials */
-	    
-		section#testimonials { /*display: none;*/
+
+	/* Crappy Android portrait · width: 240px ----------- */
+@media only screen  and (max-width : 240px) {
+
+#feature {
+ height: 300px;
 }
-	
-		/* team */
-		
-		#team .team-thumb {
- margin-right: auto;
- margin-left: auto;
+#feature article {
+ text-align: center;
+ margin-top: 15px;
+ max-width: 320px;
+}
+#feature article p {
+ font-size: 17px;
+}
+#headerwrap {	
+ background: url(../img/pastoralsocial.jpg) #0b333f no-repeat center;
+ padding-top:0px;
+ background-size:120%; /* 320px, 320px landscape */
+ margin-top: 0px;
+ min-height: 140px;
+ height: 0px;
+}
+ #headerwrap h1 {
+ font-size:1.5em;
+ margin-top: 1em;
+}
+ #headerwrap h2 {
+ font-size:0.7em;
+ margin: 7px auto;
+ padding: 2px;
  width: 150px;
- display: block;
- text-align:center
 }
- .job-position: {
- margin-bottom: 1.5em;
+ ul.icon {
+ font-size:30px;
+ margin:0 0 0.5em 0;
 }
- .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
- margin-left: auto;
- margin-right: auto;
+ section#dimensiones h1 {
+ font-size: 2em;
 }
-		
-		
-
-		#theme-form {
- overflow: hidden;
+ section#services h1 {
+ font-size: 2em;
 }
- #theme-form input[type=submit] {
- width: 100%;
+ section#news h1 {
+ font-size: 2em;
+}
+.navbar-inner {
+ min-height: 0em;
 }
 }
 
-	/* Smartphones (landscape) ----------- */
-	@media only screen  and (min-width : 321px) {
- #feature-headline {
- font-size: 32px; /* 34px */
-}
-}
-	
-	/* Smartphones (portrait) ----------- */
-	@media only screen  and (max-width : 320px) {
- #feature-headline {
- font-size: 1.1875em; /* 19px */
-}
- #feature article p {
- font-family: 'Open Sans', sans-serif;
- font-size: 26px; /* font-size: 26px; */
- margin-bottom: 0;
- line-height: 30px;
- color: #fff;
-}
-}
-	
-	/* iPads (portrait and landscape) ----------- */
-	@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px) {
- .banner-caption p {
- font-size: 0.6em;
-}
- #intro-caption {
- font-size: 4em;
-}
-}
-	
-	/* iPads (landscape) ----------- */
-	@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px)  and (orientation : landscape) {
-/* Styles */
-	}
-	
-	/* iPads (portrait) ----------- */
-	@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px)  and (orientation : portrait) {
-/* Styles */
-	}
-	
-	/* Desktops and laptops ----------- */
-	@media only screen  and (min-width : 1224px) {
-/* Styles */
-	}
